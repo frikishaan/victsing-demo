@@ -1,0 +1,143 @@
+body {
+  font-family: "Josefin Sans", sans-serif;
+  /* font-family: "Special Elite", sans-serif; */
+}
+.main-color {
+  /* background-color: #ed2248; */
+  background: #ed2248; /* Old browsers */
+  background: -moz-linear-gradient(
+    left,
+    #ed2248 0%,
+    #ea5671 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    left,
+    #ed2248 0%,
+    #ea5671 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ed2248 0%,
+    #ea5671 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ed2248', endColorstr='#ea5671',GradientType=1 ); /* IE6-9 */
+}
+
+ul.sidenav li i.fas {
+  margin-right: 2rem;
+}
+
+header .main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* align-content: center; */
+  justify-content: center;
+}
+
+header .row {
+  padding: 2rem;
+}
+.flex {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  /* align-items: center; */
+  /* align-content: center; */
+}
+.features .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.head {
+  border-bottom: 2px solid #ea5671;
+  margin-bottom: 2rem;
+}
+
+#video {
+  background: url("../images/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  text-align: center;
+  padding: 2rem;
+  opacity: 0.6;
+}
+
+.testimonials .card {
+  padding: 2rem;
+  transition: 0.5s all;
+}
+#testimonial:hover {
+  /* transform: rotateY(360deg); */
+  transform: scale(1.05);
+}
+.buy-now {
+  padding: 2rem;
+  text-align: center;
+}
+.buy-now button {
+  color: #ed2248;
+}
+.newsletter {
+  padding: 2rem;
+  background-color: #f4f4f4;
+}
+
+footer {
+  padding-top: 1.3rem;
+}
+footer a {
+  color: #ffffff !important;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+footer .follow a {
+  margin-right: 1rem;
+}
+
+.below-footer {
+  text-align: center;
+  font-size: 12px;
+  padding: 0;
+  margin: 0;
+}
+.why {
+  margin-top: 4rem;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  /* padding: 0 4px; */
+}
+
+.column {
+  flex: 33%;
+  max-width: 33%;
+  /* padding: 0 4px; */
+}
+
+.column img {
+  /* margin-top: 8px; */
+  vertical-align: middle;
+  width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
